@@ -24,16 +24,16 @@ export const HERO_FEATURES = [
     id: 1,
     title: "闪耀夏日版本",
     subtitle: "闪耀夏日版本 热辣来袭！",
-    image: "/images/04.jpg",
+    image: "./images/04.jpg",
     buttonText: "查看详情",
     hideTextOverlay: true,
-    link: "/category/all"
+    link: "./category/all"
   },
   {
     id: 2,
     title: "官方福利群招募",
     subtitle: "加入DNF周边商城官方QQ群，解锁专属福利！",
-    image: "/images/02.jpg",
+    image: "./images/02.jpg",
     buttonText: "立即加入",
     hideTextOverlay: true,
     link: "#"
@@ -42,19 +42,19 @@ export const HERO_FEATURES = [
     id: 3,
     title: "暗精灵的增幅秘辛",
     subtitle: "克伦特携普雷神宠，助你战力飙升。",
-    image: "/images/03.jpg",
+    image: "./images/03.jpg",
     buttonText: "查看活动",
     hideTextOverlay: true,
-    link: "/category/figures"
+    link: "./category/figures"
   },
   {
     id: 4,
     title: "太初水晶球礼盒",
     subtitle: "太初周边来袭，欧气满满。",
-    image: "/images/01.jpg",
+    image: "./images/01.jpg",
     buttonText: "立即抢购",
     hideTextOverlay: true,
-    link: "/gacha"
+    link: "./gacha"
   }
 ];
 
