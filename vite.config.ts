@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: './', // 关键配置：将绝对路径 '/' 改为相对路径 './'
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
     assetsDir: 'assets',
   }
 });
