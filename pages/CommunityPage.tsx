@@ -4,27 +4,27 @@ import { Heart, Camera, PenTool, Trophy, ChevronRight } from 'lucide-react';
 const CommunityPage: React.FC = () => {
   // Mock data for the 4 sections
   const fanArts = [
-    { id: 1, author: "画师A", image: "https://picsum.photos/400/300?random=901", title: "冬日祭同人图" },
-    { id: 2, author: "玩家B", image: "https://picsum.photos/400/300?random=902", title: "全家福素描" },
-    { id: 3, author: "C大大", image: "https://picsum.photos/400/300?random=903", title: "像素风头像" },
+    { id: 1, author: "画师A", image: "./images/DM_20260112153738_032.jpg", title: "冬日祭同人图" },
+    { id: 2, author: "玩家B", image: "./images/DM_20260112153738_033.jpg", title: "全家福素描" },
+    { id: 3, author: "C大大", image: "./images/DM_20260112153738_034.jpg", title: "像素风头像" },
   ];
 
   const rankings = [
-    { id: 1, name: "阿狸", image: "https://picsum.photos/400/300?random=904", votes: "1.2w 票" },
-    { id: 2, name: "金克丝", image: "https://picsum.photos/400/300?random=905", votes: "9800 票" },
-    { id: 3, name: "亚索", image: "https://picsum.photos/400/300?random=906", votes: "8500 票" },
+    { id: 1, name: "阿狸", image: "./images/DM_20260112153738_035.jpg", votes: "1.2w 票" },
+    { id: 2, name: "金克丝", image: "./images/DM_20260112153738_036.jpg", votes: "9800 票" },
+    { id: 3, name: "亚索", image: "./images/DM_20260112153738_037.jpg", votes: "8500 票" },
   ];
 
   const wishes = [
-    { id: 1, user: "User_001", image: "https://picsum.photos/400/300?random=907", content: "希望能出这款的1/4雕像！" },
-    { id: 2, user: "User_002", image: "https://picsum.photos/400/300?random=908", content: "许愿复刻S8冠军服饰" },
-    { id: 3, user: "User_003", image: "https://picsum.photos/400/300?random=909", content: "想要更多像素风周边" },
+    { id: 1, user: "User_001", image: "./images/DM_20260112153738_038.jpg", content: "希望能出这款的1/4雕像！" },
+    { id: 2, user: "User_002", image: "./images/DM_20260112153738_039.jpg", content: "许愿复刻S8冠军服饰" },
+    { id: 3, user: "User_003", image: "./images/DM_20260112153738_040.jpg", content: "想要更多像素风周边" },
   ];
 
   const feedbacks = [
-    { id: 1, user: "买家秀1", image: "https://picsum.photos/400/300?random=910", comment: "做工真的很精细，爱了" },
-    { id: 2, user: "买家秀2", image: "https://picsum.photos/400/300?random=911", comment: "摆在桌上太好看了" },
-    { id: 3, user: "买家秀3", image: "https://picsum.photos/400/300?random=912", comment: "物流很快，包装完好" },
+    { id: 1, user: "买家秀1", image: "./images/DM_20260112153738_041.jpg", comment: "做工真的很精细，爱了" },
+    { id: 2, user: "买家秀2", image: "./images/DM_20260112153738_042.jpg", comment: "摆在桌上太好看了" },
+    { id: 3, user: "买家秀3", image: "./images/DM_20260112153738_043.jpg", comment: "物流很快，包装完好" },
   ];
 
   const SectionHeader = ({ title, icon: Icon }: { title: string; icon: any }) => (

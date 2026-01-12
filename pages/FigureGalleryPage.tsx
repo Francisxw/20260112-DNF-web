@@ -4,21 +4,21 @@ import { Link } from 'react-router-dom';
 
 // Mock data specific to this page to match the screenshot
 const FIGURE_LIST = [
-  { id: 101, name: '海克斯科技亚龙手办', image: 'https://nb-stor.s3.us-east-1.amazonaws.com/chat-attachments/2025/01/21/f0c32607-b3e3-4411-9257-190696956795/image.png' }, 
-  { id: 102, name: '灵魂莲华 提莫手办', image: 'https://picsum.photos/200/200?random=102' },
-  { id: 103, name: '纳财大帝 塔姆 手办', image: 'https://picsum.photos/200/200?random=103' },
-  { id: 104, name: '双城之战 金克丝手办', image: 'https://picsum.photos/200/200?random=104' },
-  { id: 105, name: '神龙尊者 苍龙艾希 手办', image: 'https://picsum.photos/200/200?random=105' },
-  { id: 106, name: '青花瓷 拉克丝手办', image: 'https://picsum.photos/200/200?random=106' },
-  { id: 107, name: '星之守护者 卡莎手办', image: 'https://picsum.photos/200/200?random=107' },
-  { id: 108, name: '冠军纳什男爵XL手办', image: 'https://picsum.photos/200/200?random=108' },
-  { id: 109, name: '咖啡甜心 格温 炫彩手办', image: 'https://picsum.photos/200/200?random=109' },
-  { id: 110, name: '幻灵战斗队长 厄运小姐 手办', image: 'https://picsum.photos/200/200?random=110' },
-  { id: 111, name: '太空律动 布里茨 XL手办', image: 'https://picsum.photos/200/200?random=111' },
-  { id: 112, name: '觅心猫猫 悠米 手办', image: 'https://picsum.photos/200/200?random=112' },
-  { id: 113, name: '觅心猫猫 悠米 就想粘你', image: 'https://picsum.photos/200/200?random=113' },
-  { id: 114, name: '觅心猫猫 悠米 月色真美', image: 'https://picsum.photos/200/200?random=114' },
-  { id: 115, name: '星之守护者 璐璐 手办', image: 'https://picsum.photos/200/200?random=115' },
+  { id: 101, name: '海克斯科技亚龙手办', image: './images/DM_20260112153738_044.jpg' },
+  { id: 102, name: '灵魂莲华 提莫手办', image: './images/DM_20260112153738_045.jpg' },
+  { id: 103, name: '纳财大帝 塔姆 手办', image: './images/DM_20260112153738_046.jpg' },
+  { id: 104, name: '双城之战 金克丝手办', image: './images/DM_20260112153738_047.jpg' },
+  { id: 105, name: '神龙尊者 苍龙艾希 手办', image: './images/DM_20260112153738_048.jpg' },
+  { id: 106, name: '青花瓷 拉克丝手办', image: './images/DM_20260112153738_049.jpg' },
+  { id: 107, name: '星之守护者 卡莎手办', image: './images/DM_20260112153738_050.jpg' },
+  { id: 108, name: '冠军纳什男爵XL手办', image: './images/DM_20260112153738_051.jpg' },
+  { id: 109, name: '咖啡甜心 格温 炫彩手办', image: './images/DM_20260112153738_052.jpg' },
+  { id: 110, name: '幻灵战斗队长 厄运小姐 手办', image: './images/DM_20260112153738_053.jpg' },
+  { id: 111, name: '太空律动 布里茨 XL手办', image: './images/DM_20260112153738_054.jpg' },
+  { id: 112, name: '觅心猫猫 悠米 手办', image: './images/DM_20260112153738_055.jpg' },
+  { id: 113, name: '觅心猫猫 悠米 就想粘你', image: './images/DM_20260112153738_056.jpg' },
+  { id: 114, name: '觅心猫猫 悠米 月色真美', image: './images/DM_20260112153738_057.jpg' },
+  { id: 115, name: '星之守护者 璐璐 手办', image: './images/DM_20260112153738_058.jpg' },
 ];
 
 const FigureGalleryPage: React.FC = () => {
@@ -37,9 +37,9 @@ const FigureGalleryPage: React.FC = () => {
         <div className="container mx-auto max-w-[1200px] h-full flex flex-col md:flex-row items-center relative z-10 px-4 py-8 md:py-0">
             {/* Left Image */}
             <div className="w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0">
-                <img 
-                    src="https://nb-stor.s3.us-east-1.amazonaws.com/chat-attachments/2025/01/21/f0c32607-b3e3-4411-9257-190696956795/image.png" 
-                    alt="Featured Figure" 
+                <img
+                    src="./images/DM_20260112153738_044.jpg"
+                    alt="Featured Figure"
                     className="max-h-[300px] md:max-h-[400px] object-contain drop-shadow-[0_0_20px_rgba(255,215,0,0.2)] animate-in slide-in-from-left-8 duration-700"
                 />
             </div>

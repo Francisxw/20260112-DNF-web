@@ -7,7 +7,7 @@ const BLIND_BOX_SERIES = [
     title: "间谍过家家 SPY×FAMILY 毛绒系列",
     subtitle: "全6款 + 隐藏款1款",
     price: 59,
-    image: "https://picsum.photos/800/400?random=501",
+    image: "./images/DM_20260112153738_008.jpg",
     theme: "bg-[#FFF8E1]", // Light Yellow
     tags: ["新品", "热销"]
   },
@@ -16,7 +16,7 @@ const BLIND_BOX_SERIES = [
     title: "奥特曼 英雄传泽塔 变身器系列",
     subtitle: "光之巨人 变身道具收藏",
     price: 49,
-    image: "https://picsum.photos/800/400?random=502",
+    image: "./images/DM_20260112153738_009.jpg",
     theme: "bg-[#E3F2FD]", // Light Blue
     tags: ["限定"]
   },
@@ -25,7 +25,7 @@ const BLIND_BOX_SERIES = [
     title: "园艺大师 哆啦A梦 植绒手办",
     subtitle: "治愈系桌面摆件",
     price: 69,
-    image: "https://picsum.photos/800/400?random=503",
+    image: "./images/DM_20260112153738_010.jpg",
     theme: "bg-[#E8F5E9]", // Light Green
     tags: ["现货"]
   },
@@ -34,7 +34,7 @@ const BLIND_BOX_SERIES = [
     title: "名侦探柯南 日常系列",
     subtitle: "真相只有一个！",
     price: 59,
-    image: "https://picsum.photos/800/400?random=504",
+    image: "./images/DM_20260112153738_011.jpg",
     theme: "bg-[#FFEBEE]", // Light Red
     tags: ["人气"]
   }
@@ -118,10 +118,10 @@ const GachaPage: React.FC = () => {
                 {[1,2,3,4,5,6,7,8,9,10].map((i) => (
                     <div key={i} className="group cursor-pointer">
                         <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden mb-2 relative">
-                            <img 
-                                src={`https://picsum.photos/300/300?random=${600+i}`} 
-                                className="w-full h-full object-cover" 
-                                alt="Blind Box" 
+                            <img
+                                src={`./images/DM_20260112153738_${String(i + 11).padStart(3, '0')}.jpg`}
+                                className="w-full h-full object-cover"
+                                alt="Blind Box"
                             />
                             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-2 text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity">
                                 查看详情

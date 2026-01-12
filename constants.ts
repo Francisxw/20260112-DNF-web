@@ -9,14 +9,14 @@ export const CATEGORIES: Category[] = [
 ];
 
 export const MOCK_PRODUCTS: Product[] = [
-  { id: '1', name: 'K/DA 阿狸 1/7 雕像', price: 1299, image: 'https://picsum.photos/400/400?random=1', tag: 'HOT', category: 'figures' },
-  { id: '2', name: '提莫队长 蘑菇抱枕', price: 128, image: 'https://picsum.photos/400/400?random=2', category: 'home' },
-  { id: '3', name: '源计划 联合款机械键盘', price: 899, originalPrice: 1099, image: 'https://picsum.photos/400/400?random=3', tag: 'SALE', category: 'digital' },
-  { id: '4', name: '金克丝 鲨鱼炮毛绒', price: 259, image: 'https://picsum.photos/400/400?random=4', tag: 'NEW', category: 'figures' },
-  { id: '5', name: '亚索 疾风剑豪 T恤', price: 199, image: 'https://picsum.photos/400/400?random=5', category: 'apparel' },
-  { id: '6', name: '英雄联盟 logo 棒球帽', price: 99, image: 'https://picsum.photos/400/400?random=6', category: 'apparel' },
-  { id: '7', name: '波罗 饼干人 挂件', price: 45, image: 'https://picsum.photos/400/400?random=7', category: 'jewelry' },
-  { id: '8', name: '星之守护者 魔法少女手办', price: 599, image: 'https://picsum.photos/400/400?random=8', category: 'figures' },
+  { id: '1', name: 'K/DA 阿狸 1/7 雕像', price: 1299, image: './images/DM_20260107112631_004.jpg', tag: 'HOT', category: 'figures' },
+  { id: '2', name: '提莫队长 蘑菇抱枕', price: 128, image: './images/DM_20260107112631_005.jpg', category: 'home' },
+  { id: '3', name: '源计划 联合款机械键盘', price: 899, originalPrice: 1099, image: './images/DM_20260107112631_006.jpg', tag: 'SALE', category: 'digital' },
+  { id: '4', name: '金克丝 鲨鱼炮毛绒', price: 259, image: './images/DM_20260107112631_007.jpg', tag: 'NEW', category: 'figures' },
+  { id: '5', name: '亚索 疾风剑豪 T恤', price: 199, image: './images/DM_20260107112631_008.jpg', category: 'apparel' },
+  { id: '6', name: '英雄联盟 logo 棒球帽', price: 99, image: './images/DM_20260107112631_009.jpg', category: 'apparel' },
+  { id: '7', name: '波罗 饼干人 挂件', price: 45, image: './images/DM_20260107112631_010.jpg', category: 'jewelry' },
+  { id: '8', name: '星之守护者 魔法少女手办', price: 599, image: './images/DM_20260107112631_011.jpg', category: 'figures' },
 ];
 
 export const HERO_FEATURES = [
@@ -59,8 +59,8 @@ export const HERO_FEATURES = [
 ];
 
 export const VICE_PRODUCTS = [
-  { id: 'slayer_m', title: '鬼剑士(男)', image: 'https://nb-stor.s3.us-east-1.amazonaws.com/chat-attachments/2025/01/21/c8731778-9e55-4606-96de-378877f1b250/image.png' },
-  { id: 'slayer_m_2', title: '鬼剑士(觉醒)', image: 'https://nb-stor.s3.us-east-1.amazonaws.com/chat-attachments/2025/01/21/f84307a0-2f98-4d5c-9c98-1a5209772c5a/image.png' },
-  { id: 'gunner_f', title: '神枪手(女)', image: 'https://nb-stor.s3.us-east-1.amazonaws.com/chat-attachments/2025/01/21/f0c40698-d1d6-4402-9a00-36a3108605c3/image.png' },
-  { id: 'slayer_f', title: '鬼剑士(女)', image: 'https://nb-stor.s3.us-east-1.amazonaws.com/chat-attachments/2025/01/21/68846c48-2615-4e78-831d-b57f00d8b365/image.png' },
+  { id: 'slayer_m', title: '鬼剑士(男)', image: './images/DM_20260112153738_004.jpg' },
+  { id: 'slayer_m_2', title: '鬼剑士(觉醒)', image: './images/DM_20260112153738_005.jpg' },
+  { id: 'gunner_f', title: '神枪手(女)', image: './images/DM_20260112153738_006.jpg' },
+  { id: 'slayer_f', title: '鬼剑士(女)', image: './images/DM_20260112153738_007.jpg' },
 ];
