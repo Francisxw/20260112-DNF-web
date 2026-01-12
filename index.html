@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Merch Mall</title>
+    <script>
+      // 安全检查脚本：防止直接双击打开导致的白屏困惑
+      if (window.location.protocol === 'file:') {
+        window.stop(); // 停止加载其他资源
+        document.write(`
+          <div style="
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: #fff; z-index: 99999; display: flex; flex-direction: column;
+            align-items: center; justify-content: center; text-align: center;
+            font-family: system-ui, -apple-system, sans-serif; color: #333;
+          ">
+            <h1 style="color: #e11d48; margin-bottom: 20px;">⚠️ 无法直接打开此文件 / Cannot Open Directly</h1>
+            <p style="font-size: 18px; margin-bottom: 10px; max-width: 600px; line-height: 1.5;">
+              由于现代浏览器的安全策略（CORS），React 应用无法在 <b>file://</b> 协议下运行。<br>
+              直接双击 index.html 会导致页面功能失效。
+            </p>
+            <div style="padding: 30px; background: #f3f4f6; border-radius: 12px; border: 2px dashed #ccc; margin: 20px 0;">
+              <p style="font-weight: bold; font-size: 20px; color: #000; margin-bottom: 10px;">
+                正确打开方式：
+              </p>
+              <p style="font-size: 18px; color: #2563eb;">
+                请回到文件夹，双击运行 <span style="background:#e0e7ff; padding:4px 8px; border-radius:4px;">preview.bat</span>
+              </p>
+            </div>
+            <p style="margin-top: 20px; font-size: 14px; color: #888;">
+              这会自动启动一个本地服务器来正确渲染网页。
+            </p>
+          </div>
+        `);
+        throw new Error("Application stopped: file:// protocol detected.");
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+      
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      
+      .font-serif-display {
+        font-family: 'Playfair Display', serif;
+      }
+
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+
+      /* Marquee Animation */
+      @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+      .animate-marquee {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 20s linear infinite;
+      }
+      .paused {
+        animation-play-state: paused;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50 text-gray-900">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
